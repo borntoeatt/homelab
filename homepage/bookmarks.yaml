@@ -1,0 +1,90 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Developer:
+    - Github:
+        - abbr: GH
+          href: https://github.com/borntoeatt/
+          icon: mdi-github-#FFFFFF
+    - chatgpt:
+        - abbr: CG
+          href: https://chat.openai.com/
+          icon: https://static.vecteezy.com/system/resources/previews/021/059/827/original/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg      
+
+- Social:
+    - Reddit:
+        - abbr: RE
+          href: https://reddit.com/
+          icon: mdi-reddit-#FF4500
+
+- Entertainment:
+    - YouTube:
+        - abbr: YT
+          href: https://www.youtube.com/@borntoeat7034
+          icon: mdi-youtube-#FF0000
+    - Twitch: 
+        - abbr: TW
+          href: https://www.twitch.tv/borntoeatt
+          icon: mdi-twitch-#6441a5
+    - Spotify:
+        - abbr: SP
+          href: https://open.spotify.com/user/
+          icon: mdi-spotify-#1db954
+    - Netflix:
+        - abbr: NF
+          href: https://www.netflix.com/
+          icon: mdi-netflix-#E50914
+    - Plex:
+        - abbr: PL
+          href: https://app.plex.tv/desktop
+          icon: mdi-plex-#E5A00D
+    - Disney+: 
+        - abbr: D+
+          href: https://www.disneyplus.com/
+          icon: https://cnbl-cdn.bamgrid.com/assets/b1dfa5bf0eb59de200167e5ca961e8d3387a8bcd424c0ad6f418686a66a2a505/original
+    - Hulu:
+        - abbr: HU
+          href: https://www.hulu.com/
+          icon: mdi-hulu-#1ce783
+    - HBO Max:
+        - abbr: HBO
+          href: https://www.hbomax.com/
+          icon: https://i.pcmag.com/imagery/reviews/06Oau8UJO0of0q2R98bMSZ5-7.fit_scale.size_1028x578.v1684870453.png
+          
+
+    - Amazon Prime Video:
+        - abbr: APV
+          href: https://www.primevideo.com/
+          icon: https://www.travelanddestinations.com/wp-content/uploads/2020/10/Amazon-Prime-Logo.png
+    - Apple TV+: 
+        - abbr: ATV
+          href: https://tv.apple.com/bg/  
+          icon: mdi-apple-#000000
+          
+- Media:
+    - Jellifin:
+        - abbr: JF
+          href: https://media.borntoeatt.online/
+          icon: mdi-movie-#7b68ee 
+    - jelliseerr:
+        - abbr: JS
+          href: https://catalog.borntoeatt.online/  
+          icon: mdi-jellyfish-#7b68ee 
+- Tools:
+    - Speedtest:
+        - abbr: ST
+          href: https://www.speedtest.net/
+          icon: mdi-speedometer-#FF0000
+    - statuspage:
+        - abbr: SP
+          href: https://status.dporkov.tech/
+          info: Check the status of my services
+          icon: mdi-information-#00ff00
+    - Monitoring:
+        - abbr: Admin Monitoring Dashboard
+          href: https://uptime.betterstack.com/team/300450/monitors
+          info: Check the status of my services
+          icon: mdi-monitor-dashboard-#87cefa 
+    
+    

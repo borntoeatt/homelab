@@ -1,0 +1,159 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+
+- Server:
+    -  PVE Cluster:
+        href: https://192.168.0.100:8006/
+        description: PVE Node Proxmox VE
+        icon: proxmox.png
+    -  PVE Cluster:
+        href: https://192.168.0.185:8006/
+        description: Hellscream Node Proxmox VE
+        icon: proxmox.png    
+    -  PVE Cluster:
+        href: https://192.168.0.165:8006/
+        description: Arthas Node Proxmox VE
+        icon: proxmox.png        
+    - OpenMediaVault:
+        href: http://192.168.0.140/
+        description: NAS/Container backup management
+        icon: openmediavault.png    
+    - proxmox backup:
+        href: http://192.168.0.136:8007/
+        description: Proxmox Backup Server
+        icon: proxmox.png
+        
+- Cloud Group:
+    - Nextcloud:
+        href: https://cloudtobe.online
+        description: Cloud solution for files, calendars, contacts, and more
+        icon: nextcloud.png
+    - Talk:
+        href: https://cloudtobe.online/index.php/call/a58dk7cy
+        description: Chat/Call for issues for cloudtobe
+        icon: mdi-help-circle-outline
+
+
+- Monitoring Group:
+    - Grafana:
+        icon: grafana.png
+        href: http://grafana.homelab.com/
+        description: Monitoring
+
+    - Uptime Kuma:
+       href: http://uptime.homelab.com
+       icon: https://static-00.iconduck.com/assets.00/uptime-kuma-icon-2048x1892-iigw6pmz.png
+       description: Uptime for services
+           
+    - Netdata: 
+        icon: https://demo.wordops.eu/netdata/images/netdata-logomark.svg
+        href: http://192.168.0.100:19999/spaces/borntoeatt-space/rooms/all-nodes/home?post_survey_submit=true#metrics_correlation=false&after=-60&before=0&utc=Europe%2FSofia&offset=%2B2&timezoneName=Helsinki%2C%20Kyiv%2C%20Riga%2C%20Sofia%2C%20Tallinn%2C%20Vilnius&modal=&modalTab=&modalParams=&selectedIntegrationCategory=deploy.operating-systems&force_play=false&%5Bnetdata_agent_local%5D--chartName-val=menu_System-0&5358313e-4365-470c-94f0-09f09f9bd774%5Bnetdata_agent_local%5D--chartName-val=menu_System-0_Compute-1_Pressure_Stall_Information__PSI_-2_Memory-3_submenu_System-0_Compute-1_Pressure_Stall_Information__PSI_-2_Memory-3_Some_Pressure-4&5358313e-4365-470c-94f0-09f09f9bd774%5Bnetdata_agent_local%5D-fn-selectedFn-arr=systemd-journal%3A%3A%3A0&5358313e-4365-470c-94f0-09f09f9bd774%5Bnetdata_agent_local%5D-processes%3A%3A%3A0-selectedNodeIds-arr=e84f732b-ec0e-4b88-96b2-fec72e933eb3&5358313e-4365-470c-94f0-09f09f9bd774%5Bnetdata_agent_local%5D-nodesView-nodeIdToGo-val=menu_Live&5358313e-4365-470c-94f0-09f09f9bd774%5Bnetdata_agent_local%5D-systemd-journal%3A%3A%3A0-selectedNodeIds-arr=e84f732b-ec0e-4b88-96b2-fec72e933eb3&5358313e-4365-470c-94f0-09f09f9bd774%5Bnetdata_agent_local%5D-systemd-journal%3A%3A%3A0Filters-__logs_sources-arr=all&5358313e-4365-470c-94f0-09f09f9bd774%5Bnetdata_agent_local%5D-systemd-journal%3A%3A%3A0-selectedFacets-arr=_HOSTNAME%2CPRIORITY%2CSYSLOG_FACILITY%2CERRNO%2CSYSLOG_IDENTIFIER%2CUNIT%2CUSER_UNIT%2CMESSAGE_ID%2C_BOOT_ID%2C_SYSTEMD_OWNER_UID%2C_UID%2COBJECT_SYSTEMD_OWNER_UID%2COBJECT_UID%2C_GID%2COBJECT_GID%2C_CAP_EFFECTIVE%2C_AUDIT_LOGINUID%2COBJECT_AUDIT_LOGINUID%2CCODE_FILE%2C_EXE%2C_KERNEL_SUBSYSTEM%2C_SELINUX_CONTEXT%2C_SYSTEMD_USER_SLICE%2C_SYSTEMD_USER_UNIT%2C_SYSTEMD_SLICE%2C_UDEV_DEVNODE%2C_SYSTEMD_CGROUP%2C_RUNTIME_SCOPE%2C_COMM%2C_SYSTEMD_SESSION%2C_TRANSPORT%2CUNIT_RESULT%2CCODE_FUNC%2C_SYSTEMD_UNIT%2CND_NIDL_NODE%2CND_LOG_SOURCE%2C_NAMESPACE
+        description: Monitoring tool for Proxmox VE Cluster
+
+    - My Speed: 
+        icon: https://cdn1.vectorstock.com/i/1000x1000/96/45/icon-linear-blue-internet-speed-wi-fi-vector-24849645.jpg
+        href: http://spd.homelab.com
+        description: Hourly internet speed check
+    - Heimdall:
+        icon: heimdall.png
+        href: http://
+        description: Dashboard to be used for something don't know yet    
+
+      
+- Media Backend Automation Group:
+    - Sonarr:
+        icon: sonarr.png
+        href: http://sonarr.homelab.com/
+        description: Series management
+        widget: 
+          type: sonarr
+          fields: ["wanted", "missing"]
+          key: dea8c063ea184976bb87534d8f5a6788
+          url: http://sonarr.homelab.com
+
+    - Radarr:
+        icon: radarr.png
+        href: http://radarr.homelab.com/
+        description: Movie management
+        widget: 
+          type: radarr
+          fields: ["wanted", "missing", "monitored"]
+          key: c26d44e48f61495b8e0ea84ebefb6bc6
+          url: http://radarr.homelab.com
+    - prowlarr:
+        icon: prowlarr.png
+        href: http://prowlarr.homelab.com
+        description: Indexer management         
+       
+    - Bazarr:
+        icon: bazarr.png
+        href: http://bazarr.homelab.com
+        description: Subtitle management          
+    - qBittorrent:
+        icon: mdi-download
+        href: http://qbit.homelab.com
+        description: Download stuff
+        type: qbittorrent
+
+    - Tautulli:
+        icon: tautulli.png
+        href: http://tatulli.homelab.com/
+        description: Monitoring tool for Plex
+
+- Media Group:        
+    - Plex:
+        icon: plex.png
+        href: https://app.plex.tv/
+        description: Media server for movies and series
+    - Jellifin:
+          href: https://media.borntoeatt.online/
+          icon: jellyfin.png
+          description: Media server for movies and series
+
+    - Jelliseerr:
+          href: https://catalog.borntoeatt.online/  
+          icon: jellyseerr.png
+          description: Media catalog for movies and series
+- Lab Group:
+
+    - Pihole:
+        icon: https://static-00.iconduck.com/assets.00/pihole-icon-1393x2048-dld9kbl1.png
+        href: http://pihole.homelab.com/admin/
+        description: Pihole Local DNS Server 
+    - Proxmox Sripts:
+        icon: mdi-code-tags
+        href: https://community-scripts.github.io/ProxmoxVE/scripts
+        description: Proxmox helper scripts  
+    - Portainer:
+        icon: portainer.png
+        href: http://portainer.homelab.com
+        description: Container management
+        docker: true
+    - Jenkins:
+        icon: jenkins.png
+        href: http://jenkins.homelab.com 
+        description: CI/CD
+    - Home Assistant:
+        icon: homeassistant.png
+        href: http://homeassistant.homelab.com
+        description: Home automation
+- Network Group:
+    - My Speed: 
+        icon: https://cdn1.vectorstock.com/i/1000x1000/96/45/icon-linear-blue-internet-speed-wi-fi-vector-24849645.jpg
+        href: http://spd.homelab.com
+        description: Hourly internet speed check
+
+    - Technitium DNS:
+        icon: https://d1myhw8pp24x4f.cloudfront.net/software_logo/1587971150_Technitium%20logo_mid.png
+        href: http://dns1.homelab.com:5380
+        description: DNS server for local network
+    - Unifi:
+        icon: unifi.png
+        href: https://router1.homelab.com
+        description: Unifi Router1
+    - Nginx Proxy Manager:
+        icon: nginx.png
+        href: http://lb1.homelab.com:81/
+        description: Reverse proxy for local network
+        

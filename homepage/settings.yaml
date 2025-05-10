@@ -1,0 +1,37 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
+
+title: Pretty much all you need
+headerStyle: boxed
+
+background: 
+ # image: https://images.unsplash.com/photo-1637825891028-564f672aa42c
+  image: https://wallpaperaccess.com/full/492387.jpg
+  blur: 100
+  brightness: 90
+  opacity: 80
+
+cardBlur: sm
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+layout:
+  Networking:
+    icon: mdi-network-#FFFFFF
+  Infrastructure and Data:
+    icon: mdi-server-#FFFFFF
+  Management:
+    icon: mdi-auto-fix-#FFFFFF
+  Monitoring:
+    icon: mdi-list-status-#FFFFFF
+  Automation:
+    icon: mdi-cog-play-#FFFFFF
+  IoT and Smarthome:
+    icon: mdi-home-#FFFFFF
+  Security and Identity:
+    icon: mdi-shield-lock-#FFFFFF
+
+  
