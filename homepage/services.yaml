@@ -69,7 +69,7 @@
         widget: 
           type: sonarr
           fields: ["wanted", "missing"]
-          key: dea8c063ea184976bb87534d8f5a6788
+          key: API
           url: http://sonarr.homelab.com
 
     - Radarr:
@@ -79,7 +79,7 @@
         widget: 
           type: radarr
           fields: ["wanted", "missing", "monitored"]
-          key: c26d44e48f61495b8e0ea84ebefb6bc6
+          key: API
           url: http://radarr.homelab.com
     - prowlarr:
         icon: prowlarr.png
