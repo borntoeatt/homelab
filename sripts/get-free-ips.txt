@@ -1,0 +1,88 @@
+========================================
+check_cluster_ips.sh - Documentation
+========================================
+
+Description:
+------------
+This script scans a given subnet for active hosts, builds an IP usage map, 
+identifies free IP addresses, generates a timestamped report, and allows 
+you to download the report via a temporary HTTP server.
+
+The script is designed for Linux environments (tested on Debian/Ubuntu/PVE) 
+and requires Python 3 for serving the report.
+
+Features:
+---------
+1. Scans a subnet for active hosts using ping.
+2. Marks each IP as [IN USE] or [FREE?].
+3. Creates a summary of candidate free IPs at the end of the report.
+4. Generates a timestamped report file named:
+   cluster_ip_report_<YYYY-MM-DD_HHMMSS>.txt
+5. Starts a simple HTTP server to download the report.
+6. Provides a clickable link in the terminal for convenient downloading.
+
+Requirements:
+-------------
+- Bash shell
+- Python 3
+- ICMP (ping) permissions
+
+Usage:
+------
+1. Make the script executable:
+   $ chmod +x check_cluster_ips.sh
+
+2. Run the script with the target subnet as argument:
+   $ ./check_cluster_ips.sh 192.168.0.0/24
+
+   Output example in terminal:
+   ----------------------------------------
+   [*] Writing report to cluster_ip_report_2025-09-24_152948.txt
+   [*] Scanning subnet 192.168.0.0/24 for active hosts...
+   ...
+   [*] Report saved to cluster_ip_report_2025-09-24_152948.txt
+   [*] Download your report at: http://192.168.0.100:8080/cluster_ip_report_2025-09-24_152948.txt
+   ----------------------------------------
+
+3. Open the link in a web browser on any device that can reach the host 
+   to download the report.
+
+Report Format:
+--------------
+The report includes:
+
+- A header showing scan details.
+- Each IP in the subnet listed as either:
+   [IN USE]   - if the IP responds to ping
+   [FREE?]    - if the IP does not respond to ping
+- A summary section with candidate free IPs.
+
+Example:
+--------
+Scanning results...
+192.168.0.1      [IN USE]
+192.168.0.2      [FREE?]
+...
+------------------------------------
+[*] Summary of candidate FREE IPs:
+192.168.0.2
+192.168.0.4
+192.168.0.7
+
+Notes:
+------
+- Replace the simple ping loop in the script with your own cluster-specific 
+  detection logic if you have additional checks (DNS names, cluster nodes, etc.).
+- The HTTP server runs on port 8080 by default. Make sure this port is open 
+  on your firewall if downloading from other devices.
+- Press Ctrl+C in the terminal to stop the HTTP server once the download is complete.
+
+Security:
+---------
+- The HTTP server is intended for local network use only. Avoid exposing it 
+  to the public internet as it serves files without authentication.
+- Ensure proper permissions for the report file to avoid unintentional access.
+
+========================================
+End of Documentation
+========================================
